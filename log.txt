@@ -1,0 +1,20 @@
+请求[object Object]请求方法：GET
+请求url:/favicon.ico
+请求头对象:{
+    "host": "127.0.0.1:4001",
+    "connection": "keep-alive",
+    "pragma": "no-cache",
+    "cache-control": "no-cache",
+    "sec-ch-ua": "\"Google Chrome\";v=\"89\", \"Chromium\";v=\"89\", \";Not A Brand\";v=\"99\"",
+    "sec-ch-ua-mobile": "?0",
+    "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.90 Safari/537.36",
+    "accept": "image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8",
+    "sec-fetch-site": "same-origin",
+    "sec-fetch-mode": "no-cors",
+    "sec-fetch-dest": "image",
+    "referer": "http://127.0.0.1:4001/",
+    "accept-encoding": "gzip, deflate, br",
+    "accept-language": "zh-CN,zh;q=0.9",
+    "cookie": "AGL_USER_ID=7c621d75-67a5-4d41-8067-92faec81de33; sensorsdata2015jssdkcross=%7B%22distinct_id%22%3A%221791d158361fb6-03f9b3fcb8381d-1632685d-2073600-1791d158362e56%22%2C%22first_id%22%3A%22%22%2C%22props%22%3A%7B%22%24latest_traffic_source_type%22%3A%22url%E7%9A%84domain%E8%A7%A3%E6%9E%90%E5%A4%B1%E8%B4%A5%22%2C%22%24latest_search_keyword%22%3A%22url%E7%9A%84domain%E8%A7%A3%E6%9E%90%E5%A4%B1%E8%B4%A5%22%2C%22%24latest_referrer%22%3A%22url%E7%9A%84domain%E8%A7%A3%E6%9E%90%E5%A4%B1%E8%B4%A5%22%7D%2C%22%24device_id%22%3A%221791d158361fb6-03f9b3fcb8381d-1632685d-2073600-1791d158362e56%22%7D; _uetvid=2be35d10a8d211eb81b5875fabf5bcc1; Hm_lvt_1d8137b1d22392852da8458ac7611118=1619690620; i18n_redirected=zh; Hm_lpvt_1d8137b1d22392852da8458ac7611118=1620897632"
+}
+请求http版本:1.1 
