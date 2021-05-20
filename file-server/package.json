@@ -1,0 +1,15 @@
+{
+  "name": "file-server",
+  "version": "1.0.0",
+  "description": "Node 静态文件服务器",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "null"
+  },
+  "author": "fitorhu",
+  "license": "ISC"
+}

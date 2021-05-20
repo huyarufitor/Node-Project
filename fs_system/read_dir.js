@@ -12,7 +12,7 @@ function travelPath(dir, callback) {
         //path.join() 方法会将所有给定的 path 片段连接到一起
         var pathname = path.join(dir, file)
         if (fs.statSync(pathname).isDirectory()) {
-            // 获取pathname的路径详细信息。是文件夹目录就递归查找，继续调用travelPath()函数
+            // 获取pathname的路径详细信息。再判断其是不是文件夹目录，是就递归查找，继续调用travelPath()函数
             travelPath(pathname, callback)
         } else {
             // 是普通文件
