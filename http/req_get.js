@@ -1,5 +1,6 @@
 // 请求网站上的信息
 const http =require('http');
+// const request = require('request');
 let options = {
     hostname : 'www.example.com',
     port : 80,
