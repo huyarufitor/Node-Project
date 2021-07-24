@@ -2,9 +2,15 @@ const http = require('http');
 const url =require('url');
 const path = require('path');
 const fs = require('fs');
+const mime = require('mime');
 
 const hostname = '127.0.0.1';
 const port = 4004;
+// mime.getType('./path/to/file.txt');
+// mime.getType('file.txt');
+// mime.getType('.TXT');
+// mime.getType('htm');
+
 const server = http.createServer((req,res)=>{
     // res.statusCode =200;
     // res.setHeader('Content-type','text/plain');
@@ -12,7 +18,8 @@ const server = http.createServer((req,res)=>{
     if(req.url =='/favicon.ico') return ;//不响应favicon请求
     //获取url -> pathname 文件名
     let pathname =path.join(__dirname,url.parse(req.url).pathname);
-    pathname = decodeURIComponent(pathname); //先给url 解码
+    pathname = decodeURIComponent(pathname); //先给url 解码,防止中文路径出错
+    // pathname:请求的路径名
     console.log(pathname);
     /**
      * 判断文件是否是文件夹
@@ -23,6 +30,7 @@ const server = http.createServer((req,res)=>{
      * 
      */
      if(fs.statSync(pathname).isDirectory()){
+        //  请求路径名是文件夹
         // 设置响应头
         res.writeHead(200, {'Content-Type': 'text/html;charset=utf-8'});
         fs.readdir(pathname, (err, files)=>{
@@ -34,6 +42,20 @@ const server = http.createServer((req,res)=>{
             })
             res.end('</ul>');
             return res;
+        })
+    }else{
+        // 这里要引入mime模块，因为放的有html,css,js,gif等文件的时候（不是每一种文件的MIME类型都是text/html）
+        fs.readFile(pathname,'binary',(err,data)=>{
+            if(err){
+                res.writeHead(500,{'Content-Type':'text/plain'});
+                res.end(JSON.stringify(err));
+                return false;
+            }
+            res.writeHead('200',{
+                'Content-Type':`${mime.getType(pathname)};charset:UTF-8`
+            })
+            res.write(data,'binary');
+            res.end();
         })
     }
 })
