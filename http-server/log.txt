@@ -1,0 +1,18 @@
+请求方法：GET 
+  请求url: /sw.js 
+ 请求头对象：{
+    "host": "127.0.0.1:3000",
+    "connection": "keep-alive",
+    "cache-control": "max-age=0",
+    "accept": "*/*",
+    "service-worker": "script",
+    "sec-fetch-site": "same-origin",
+    "sec-fetch-mode": "same-origin",
+    "sec-fetch-dest": "serviceworker",
+    "referer": "http://127.0.0.1:3000/sw.js",
+    "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.164 Safari/537.36",
+    "accept-encoding": "gzip, deflate, br",
+    "accept-language": "zh-CN,zh;q=0.9",
+    "cookie": "_uetvid=2be35d10a8d211eb81b5875fabf5bcc1; Hm_lvt_1d8137b1d22392852da8458ac7611118=1623059680,1624525051; sensorsdata2015jssdkcross=%7B%22distinct_id%22%3A%2217a3d3d16b1157-0a1a8fd4b009cc-1632685d-2073600-17a3d3d16b2b01%22%2C%22first_id%22%3A%22%22%2C%22props%22%3A%7B%22%24latest_traffic_source_type%22%3A%22url%E7%9A%84domain%E8%A7%A3%E6%9E%90%E5%A4%B1%E8%B4%A5%22%2C%22%24latest_search_keyword%22%3A%22url%E7%9A%84domain%E8%A7%A3%E6%9E%90%E5%A4%B1%E8%B4%A5%22%2C%22%24latest_referrer%22%3A%22url%E7%9A%84domain%E8%A7%A3%E6%9E%90%E5%A4%B1%E8%B4%A5%22%7D%2C%22%24device_id%22%3A%2217a3d3d16b1157-0a1a8fd4b009cc-1632685d-2073600-17a3d3d16b2b01%22%7D; Hm_lvt_4b1cfd42e49e6bcbb423515a1ab52097=1622112546,1624523890,1624525052; i18n_redirected=zh; AGL_USER_ID=8701660d-6f04-4123-a9ab-235a89137a0a"
+} 
+ 请求http版本： 1.1
